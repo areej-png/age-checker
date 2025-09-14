@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.agechecker {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 30px; 
+    text-align: center;
+    width: 300px;
+}
+
+.agechecker h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 24px; 
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4A90E2;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD; 
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#result.eligible {
+    color: green;
+}
+
+#result.not-eligible {
+    color: red;
+}
